@@ -1,0 +1,380 @@
+num_ranks 64
+
+rank 0 {
+l1: send 1024b to 1 tag 0
+l2: send 1024b to 2 tag 0
+}
+
+rank 1 {
+l1: recv 1024b from 0 tag 0
+l2: send 1024b to 3 tag 0
+l3: send 1024b to 4 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 2 {
+l1: recv 1024b from 0 tag 0
+l2: send 1024b to 5 tag 0
+l3: send 1024b to 6 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 3 {
+l1: recv 1024b from 1 tag 0
+l2: send 1024b to 7 tag 0
+l3: send 1024b to 8 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 4 {
+l1: recv 1024b from 1 tag 0
+l2: send 1024b to 9 tag 0
+l3: send 1024b to 10 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 5 {
+l1: recv 1024b from 2 tag 0
+l2: send 1024b to 11 tag 0
+l3: send 1024b to 12 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 6 {
+l1: recv 1024b from 2 tag 0
+l2: send 1024b to 13 tag 0
+l3: send 1024b to 14 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 7 {
+l1: recv 1024b from 3 tag 0
+l2: send 1024b to 15 tag 0
+l3: send 1024b to 16 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 8 {
+l1: recv 1024b from 3 tag 0
+l2: send 1024b to 17 tag 0
+l3: send 1024b to 18 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 9 {
+l1: recv 1024b from 4 tag 0
+l2: send 1024b to 19 tag 0
+l3: send 1024b to 20 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 10 {
+l1: recv 1024b from 4 tag 0
+l2: send 1024b to 21 tag 0
+l3: send 1024b to 22 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 11 {
+l1: recv 1024b from 5 tag 0
+l2: send 1024b to 23 tag 0
+l3: send 1024b to 24 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 12 {
+l1: recv 1024b from 5 tag 0
+l2: send 1024b to 25 tag 0
+l3: send 1024b to 26 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 13 {
+l1: recv 1024b from 6 tag 0
+l2: send 1024b to 27 tag 0
+l3: send 1024b to 28 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 14 {
+l1: recv 1024b from 6 tag 0
+l2: send 1024b to 29 tag 0
+l3: send 1024b to 30 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 15 {
+l1: recv 1024b from 7 tag 0
+l2: send 1024b to 31 tag 0
+l3: send 1024b to 32 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 16 {
+l1: recv 1024b from 7 tag 0
+l2: send 1024b to 33 tag 0
+l3: send 1024b to 34 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 17 {
+l1: recv 1024b from 8 tag 0
+l2: send 1024b to 35 tag 0
+l3: send 1024b to 36 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 18 {
+l1: recv 1024b from 8 tag 0
+l2: send 1024b to 37 tag 0
+l3: send 1024b to 38 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 19 {
+l1: recv 1024b from 9 tag 0
+l2: send 1024b to 39 tag 0
+l3: send 1024b to 40 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 20 {
+l1: recv 1024b from 9 tag 0
+l2: send 1024b to 41 tag 0
+l3: send 1024b to 42 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 21 {
+l1: recv 1024b from 10 tag 0
+l2: send 1024b to 43 tag 0
+l3: send 1024b to 44 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 22 {
+l1: recv 1024b from 10 tag 0
+l2: send 1024b to 45 tag 0
+l3: send 1024b to 46 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 23 {
+l1: recv 1024b from 11 tag 0
+l2: send 1024b to 47 tag 0
+l3: send 1024b to 48 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 24 {
+l1: recv 1024b from 11 tag 0
+l2: send 1024b to 49 tag 0
+l3: send 1024b to 50 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 25 {
+l1: recv 1024b from 12 tag 0
+l2: send 1024b to 51 tag 0
+l3: send 1024b to 52 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 26 {
+l1: recv 1024b from 12 tag 0
+l2: send 1024b to 53 tag 0
+l3: send 1024b to 54 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 27 {
+l1: recv 1024b from 13 tag 0
+l2: send 1024b to 55 tag 0
+l3: send 1024b to 56 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 28 {
+l1: recv 1024b from 13 tag 0
+l2: send 1024b to 57 tag 0
+l3: send 1024b to 58 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 29 {
+l1: recv 1024b from 14 tag 0
+l2: send 1024b to 59 tag 0
+l3: send 1024b to 60 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 30 {
+l1: recv 1024b from 14 tag 0
+l2: send 1024b to 61 tag 0
+l3: send 1024b to 62 tag 0
+l2 requires l1
+l3 requires l1
+}
+
+rank 31 {
+l1: recv 1024b from 15 tag 0
+l2: send 1024b to 63 tag 0
+l2 requires l1
+}
+
+rank 32 {
+l1: recv 1024b from 15 tag 0
+}
+
+rank 33 {
+l1: recv 1024b from 16 tag 0
+}
+
+rank 34 {
+l1: recv 1024b from 16 tag 0
+}
+
+rank 35 {
+l1: recv 1024b from 17 tag 0
+}
+
+rank 36 {
+l1: recv 1024b from 17 tag 0
+}
+
+rank 37 {
+l1: recv 1024b from 18 tag 0
+}
+
+rank 38 {
+l1: recv 1024b from 18 tag 0
+}
+
+rank 39 {
+l1: recv 1024b from 19 tag 0
+}
+
+rank 40 {
+l1: recv 1024b from 19 tag 0
+}
+
+rank 41 {
+l1: recv 1024b from 20 tag 0
+}
+
+rank 42 {
+l1: recv 1024b from 20 tag 0
+}
+
+rank 43 {
+l1: recv 1024b from 21 tag 0
+}
+
+rank 44 {
+l1: recv 1024b from 21 tag 0
+}
+
+rank 45 {
+l1: recv 1024b from 22 tag 0
+}
+
+rank 46 {
+l1: recv 1024b from 22 tag 0
+}
+
+rank 47 {
+l1: recv 1024b from 23 tag 0
+}
+
+rank 48 {
+l1: recv 1024b from 23 tag 0
+}
+
+rank 49 {
+l1: recv 1024b from 24 tag 0
+}
+
+rank 50 {
+l1: recv 1024b from 24 tag 0
+}
+
+rank 51 {
+l1: recv 1024b from 25 tag 0
+}
+
+rank 52 {
+l1: recv 1024b from 25 tag 0
+}
+
+rank 53 {
+l1: recv 1024b from 26 tag 0
+}
+
+rank 54 {
+l1: recv 1024b from 26 tag 0
+}
+
+rank 55 {
+l1: recv 1024b from 27 tag 0
+}
+
+rank 56 {
+l1: recv 1024b from 27 tag 0
+}
+
+rank 57 {
+l1: recv 1024b from 28 tag 0
+}
+
+rank 58 {
+l1: recv 1024b from 28 tag 0
+}
+
+rank 59 {
+l1: recv 1024b from 29 tag 0
+}
+
+rank 60 {
+l1: recv 1024b from 29 tag 0
+}
+
+rank 61 {
+l1: recv 1024b from 30 tag 0
+}
+
+rank 62 {
+l1: recv 1024b from 30 tag 0
+}
+
+rank 63 {
+l1: recv 1024b from 31 tag 0
+}
